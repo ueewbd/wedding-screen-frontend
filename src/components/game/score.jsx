@@ -23,7 +23,7 @@ function score(props) {
               ))
             }
             {myRank > 10 && <tr><td colSpan={3}>...</td></tr>}
-            {myRank >= 10 && <tr className="me"><td>{myRank + 1}</td><td>{player.name}</td><td>{player.score}</td></tr>}
+            {myRank >= 10 && <tr className="me"><td>{myRank + 1}</td><td>{rank[myRank].name}</td><td>{rank[myRank].score}</td></tr>}
           </tbody>
         </table>
       </Content>
